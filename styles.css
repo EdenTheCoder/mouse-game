@@ -97,7 +97,7 @@ button:active{
     border: solid rgb(63, 63, 63) 5px;
     margin: auto;
     width: 90vw;
-    height: 90vh;
+    height: 85vh;
     
 }
 .areabtn{
@@ -107,11 +107,20 @@ button:active{
     margin-bottom: 3vh;
     padding: 0;
     width: 12vw;
-    height: 12vh;
-
+    height: 10vh;
     cursor: none;
     opacity: 0;
 }
 .areabtn:hover{
     border-color: red;
+}
+#curser{
+    position: fixed;
+    background-color: transparent;
+    border: solid white;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    transition: all 100ms ease-out;
+    z-index: 10;
 }

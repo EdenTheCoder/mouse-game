@@ -64,5 +64,18 @@ document.getElementById("area").addEventListener("mousemove", function (e) {
 });
 
 function delayms() {
-	document.getElementById("curser").style.transition = "all " + document.getElementById("delay-ms") + " ease-out";
+	document.getElementById("curser").style.transition = "all " + document.getElementById("delay-ms").value + "ms ease-out";
+	console.log(document.getElementById("delay-ms").value);
+}
+let curser = true;
+function curserToggle() {
+	if (curser == true) {
+		curser = false;
+		document.getElementById("curser").style.opacity = 0;
+		document.getElementById("curser-swich").innerText = "curser: off";
+	} else {
+		curser = true;
+		document.getElementById("curser").style.opacity = 1;
+		document.getElementById("curser-swich").innerText = "curser: on";
+	}
 }
