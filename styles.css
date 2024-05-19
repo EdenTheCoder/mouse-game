@@ -123,4 +123,5 @@ button:active{
     height: 20px;
     transition: all 100ms ease-out;
     z-index: 10;
+    pointer-events: none;
 }
