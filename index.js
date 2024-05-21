@@ -45,6 +45,7 @@ for (let i = 1; i != 26; i++) {
 			console.log(i);
 			console.log("randint = " + currentbtn);
 			score += 1;
+   document.getElementById("score").innerText = "score :" + score;
 		} else {
 			document.getElementById("score").innerText = "score :" + score;
 			score = 0;
